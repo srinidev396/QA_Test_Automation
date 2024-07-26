@@ -1,0 +1,3 @@
+SupplierId,SupplierName,SupplierType
+"1","Import New TestData1","Type"
+"2","Import New TestData2","State"

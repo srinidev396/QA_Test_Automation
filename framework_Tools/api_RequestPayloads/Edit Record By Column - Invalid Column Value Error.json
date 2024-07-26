@@ -1,0 +1,24 @@
+{
+  "tableName": "PhysicalRecords",
+  "fieldName": "Id",
+  "keyValue": "12",
+  "isMultyupdate": true,
+  "postRow": [
+    {
+      "value": "AutoTest",
+      "columnName": "DateClosed"
+    },
+    {
+      "value": "AutoTest",
+      "columnName": "DateCreated"
+    },
+    {
+      "value": "AutoTest",
+      "columnName": "DateOpened"
+    },
+    {
+      "value": "7/22/2024",
+      "columnName": "DateOpened388"
+    }
+  ]
+}

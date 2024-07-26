@@ -1,0 +1,18 @@
+{
+  "tableName": "PhysicalRecords",
+  "keyValue": "12",
+  "postRow": [
+    {
+      "value": "APIAutomationTestEdit",
+      "columnName": "MajorDescription"
+    },
+    {
+      "value": "EditRecordMultiEdit",
+      "columnName": "MinorDescription"
+    },
+    {
+      "value": "F00011",
+      "columnName": "FileID"
+    }
+  ]
+}

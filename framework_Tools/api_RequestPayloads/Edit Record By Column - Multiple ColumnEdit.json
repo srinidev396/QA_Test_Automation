@@ -1,0 +1,20 @@
+{
+  "tableName": "PhysicalRecords",
+  "fieldName": "Id",
+  "keyValue": "12",
+  "isMultyupdate": true,
+  "postRow": [
+    {
+      "value": "APIAutomationTestEdit",
+      "columnName": "MajorDescription"
+    },
+    {
+      "value": "EditRecordMultiEdit",
+      "columnName": "MinorDescription"
+    },
+    {
+      "value": "F00011",
+      "columnName": "FileID"
+    }
+  ]
+}

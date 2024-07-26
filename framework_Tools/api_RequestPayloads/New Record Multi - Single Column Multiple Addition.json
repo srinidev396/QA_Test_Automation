@@ -1,0 +1,17 @@
+{
+  "tableName": "ElectronicRecords",
+  "postMultiRows": [
+    [	
+		{
+		"value": "SingleColumnMultiRecordAdd1",
+		"columnName": "DocumentName"
+		}
+    ],
+    [
+		{
+		"value": "SingleColumnMultiRecordAdd2",
+		"columnName": "DocumentName"
+		}
+    ]
+]
+}

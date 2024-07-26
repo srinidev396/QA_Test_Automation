@@ -1,0 +1,81 @@
+{
+  "tableName": "ElectronicRecords",
+  "postMultiRows": [
+    [
+		{
+		"value": "12",
+		"columnName": "DocumentTypesId"
+		},
+		{
+		"value": "NewMixedMultiRecordAdd",
+		"columnName": "DocumentName"
+		},
+		{
+		"value": "APIAutomationTest",
+		"columnName": "Description"
+		},
+		{
+		"value": "RET001_Ret",
+		"columnName": "RetentionCodesId"
+		},
+		{
+		"value": "7/19/2024",
+		"columnName": "DateOther"
+		},
+		{
+		"value": "7/21/2024",
+		"columnName": "DateClosed"
+		},
+		{
+		"value": "7/19/2024",
+		"columnName": "DateCreated"
+		},
+		{
+		"value": "7/23/2024",
+		"columnName": "DateOpened"
+		},
+		{
+		"value": "0",
+		"columnName": "Printed"
+		}
+    ],
+    [
+		{
+		"value": "12",
+		"columnName": "DocumentTypesId"
+		},
+		{
+		"value": "NewMultiRecordAdd",
+		"columnName": "DocumentName"
+		},
+		{
+		"value": "APIAutomationTest",
+		"columnName": "Description"
+		},
+		{
+		"value": "RET001_Ret",
+		"columnName": "RetentionCodesId"
+		},
+		{
+		"value": "7/19/2024",
+		"columnName": "DateOther"
+		},
+		{
+		"value": "7/21/2024",
+		"columnName": "DateClosed"
+		},
+		{
+		"value": "7/19/2024",
+		"columnName": "DateCreated"
+		},
+		{
+		"value": "7/23/2024",
+		"columnName": "DateOpened"
+		},
+		{
+		"value": "0",
+		"columnName": "Printed"
+		}
+    ]
+]
+}

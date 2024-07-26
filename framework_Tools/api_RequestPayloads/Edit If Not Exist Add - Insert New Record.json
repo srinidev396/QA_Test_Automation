@@ -1,0 +1,48 @@
+{
+  "tableName": "PhysicalRecords",
+  "fieldName": "FileID",
+  "keyValue": "TF9999",
+  "isMultyupdate": true,
+  "postRow": [
+    {
+      "value": "1",
+      "columnName": "OrgUnitId"
+    },
+    {
+      "value": "88",
+      "columnName": "FileTypesId"
+    },
+    {
+      "value": "EditIfNotExistAddTest",
+      "columnName": "MajorDescription"
+    },
+    {
+      "value": "EditIfNotExistAdd",
+      "columnName": "MinorDescription"
+    },
+    {
+      "value": "TF9999",
+      "columnName": "FileID"
+    },
+    {
+      "value": "RET001_Ret",
+      "columnName": "RetentionCodesId"
+    },
+    {
+      "value": "7/21/2024",
+      "columnName": "DateClosed"
+    },
+    {
+      "value": "7/19/2024",
+      "columnName": "DateCreated"
+    },
+    {
+      "value": "7/23/2024",
+      "columnName": "DateOpened"
+    },
+    {
+      "value": "7/19/2024",
+      "columnName": "DateOther"
+    }
+  ]
+}

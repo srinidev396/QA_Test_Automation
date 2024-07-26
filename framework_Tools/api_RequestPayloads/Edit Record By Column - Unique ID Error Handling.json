@@ -1,0 +1,12 @@
+{
+  "tableName": "PhysicalRecords",
+  "fieldName": "Id",
+  "keyValue": "12",
+  "isMultyupdate": true,
+  "postRow": [
+    {
+      "value": "12",
+      "columnName": "Id"
+    }
+  ]
+}

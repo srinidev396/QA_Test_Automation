@@ -1,0 +1,49 @@
+{
+  "tableName": "ElectronicRecords",
+  "postRow": [
+	{
+      "value": "1",
+      "columnName": "Id"
+    },
+    {
+      "value": "1",
+      "columnName": "OrgUnitId"
+    },
+    {
+      "value": "12",
+      "columnName": "DocumentTypesId"
+    },
+    {
+      "value": "NewSingleRecordAdd",
+      "columnName": "DocumentName"
+    },
+    {
+      "value": "APIAutomationTest",
+      "columnName": "Description"
+    },
+    {
+      "value": "RET001_Ret",
+      "columnName": "RetentionCodesId"
+    },
+    {
+      "value": "7/19/2024",
+      "columnName": "DateOther"
+    },
+    {
+      "value": "7/21/2024",
+      "columnName": "DateClosed"
+    },
+    {
+      "value": "7/19/2024",
+      "columnName": "DateCreated"
+    },
+    {
+      "value": "7/23/2024",
+      "columnName": "DateOpened"
+    },
+    {
+      "value": "0",
+      "columnName": "Printed"
+    }
+  ]
+}

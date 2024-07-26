@@ -1,0 +1,12 @@
+{
+  "tableName": "OrgUnit",
+  "fieldName": "Id",
+  "keyValue": "12",
+  "isMultyupdate": true,
+  "postRow": [
+    {
+      "value": "APIAutomationTestEdit",
+      "columnName": "Description"
+    }
+  ]
+}
