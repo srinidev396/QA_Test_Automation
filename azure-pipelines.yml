@@ -17,6 +17,11 @@ steps:
     
   displayName: 'Install Dependencies'
 
+- task: UseDotNet@2
+  inputs:
+    packageType: 'Maven'
+    versionSpec: '3.x'
+
 # Execute Whole Test Package
 - script: |
     mvn clean test -Dgroups=Smoke,setUp -Dprod=web -Denv=uat -Dregion=us -Dtest=web.web_TestCases.**
