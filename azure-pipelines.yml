@@ -13,33 +13,34 @@ steps:
 
 - script: |
     python -m pip install --upgrade pip
-    pip install selenium
-    
+    pip install selenium    
   displayName: 'Install Dependencies'
 
-- task: UseDotNet@2
-  inputs:
-    packageType: 'Maven'
-    versionSpec: '3.9.8' 
-    mavenHomePath: 'F:\apache-maven-3.9.8'
+- script: mvn -version
+  displayName: 'Check Maven version'
+# - task: UseDotNet@2
+#   inputs:
+#     packageType: 'Maven'
+#     versionSpec: '3.9.8' 
+#     mavenHomePath: 'F:\apache-maven-3.9.8'
     
-# Execute Whole Test Package
-- script: |
-    mvn clean test -Dgroups=Smoke,setUp -Dprod=web -Denv=uat -Dregion=us -Dtest=web.web_TestCases.**
-  displayName: 'Run Whole Test Package'
+# # Execute Whole Test Package
+# - script: |
+#     mvn clean test -Dgroups=Smoke,setUp -Dprod=web -Denv=uat -Dregion=us -Dtest=web.web_TestCases.**
+#   displayName: 'Run Whole Test Package'
 
-# Execute Single Whole Test Class
-- script: |
-    mvn clean test -Dgroups=Smoke,setUp -Dprod=web -Denv=uat -Dregion=us -Dtest=web.web_TestCases.login_Tests.**
-  displayName: 'Run Single Whole Test Class'
+# # Execute Single Whole Test Class
+# - script: |
+#     mvn clean test -Dgroups=Smoke,setUp -Dprod=web -Denv=uat -Dregion=us -Dtest=web.web_TestCases.login_Tests.**
+#   displayName: 'Run Single Whole Test Class'
 
-# Execute Single Test Method
-- script: |
-    mvn clean test -Dgroups=Smoke,setUp -Dprod=web -Denv=uat -Dregion=us -Dtest=web.web_TestCases.login_Tests#administrator_User_Login_Successfully
-  displayName: 'Run Single Test Method'
+# # Execute Single Test Method
+# - script: |
+#     mvn clean test -Dgroups=Smoke,setUp -Dprod=web -Denv=uat -Dregion=us -Dtest=web.web_TestCases.login_Tests#administrator_User_Login_Successfully
+#   displayName: 'Run Single Test Method'
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFiles: '/surefire-reports/TEST-*.xml'
-    mergeTestResults: true
-    testRunTitle: 'QAAutomation Test Results'
+# - task: PublishTestResults@2
+#   inputs:
+#     testResultsFiles: '/surefire-reports/TEST-*.xml'
+#     mergeTestResults: true
+#     testRunTitle: 'QAAutomation Test Results'
