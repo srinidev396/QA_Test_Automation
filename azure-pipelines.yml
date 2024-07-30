@@ -20,6 +20,7 @@ steps:
 - task: UseDotNet@2
   inputs:
     packageType: 'Maven'
+    versionSpec: '3.9.8' 
     mavenHomePath: 'F:\apache-maven-3.9.8'
     
 # Execute Whole Test Package
