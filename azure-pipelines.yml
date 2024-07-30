@@ -5,11 +5,11 @@ pool:
   name: Default
 
 steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.9.7'
-    architecture: 'x64'
-    pathToPython: 'C:\Program Files\Python39\python.exe'
+# - task: UsePythonVersion@0
+#   inputs:
+#     versionSpec: '3.9.7'
+#     architecture: 'x64'
+#     pathToPython: 'C:\Program Files\Python39\python.exe'
 
 - script: |
     python -m pip install --upgrade pip
