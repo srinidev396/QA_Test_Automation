@@ -5,13 +5,34 @@ pool:
   name: Default
 
 steps:
-- task: Maven@3
+- task: UsePythonVersion@0
   inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    versionSpec: '3.x'
+    addToPath: true
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install selenium
+    pip install -r requirements.txt
+  displayName: 'Install Dependencies'
+
+# Execute Whole Test Package
+- script: |
+    mvn clean test -Dgroups=Smoke,setUp -Dprod=web -Denv=uat -Dregion=us -Dtest=web.web_TestCases.**
+  displayName: 'Run Whole Test Package'
+
+# Execute Single Whole Test Class
+- script: |
+    mvn clean test -Dgroups=Smoke,setUp -Dprod=web -Denv=uat -Dregion=us -Dtest=web.web_TestCases.login_Tests.**
+  displayName: 'Run Single Whole Test Class'
+
+# Execute Single Test Method
+- script: |
+    mvn clean test -Dgroups=Smoke,setUp -Dprod=web -Denv=uat -Dregion=us -Dtest=web.web_TestCases.login_Tests#administrator_User_Login_Successfully
+  displayName: 'Run Single Test Method'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: '/surefire-reports/TEST-*.xml'
+    mergeTestResults: true
+    testRunTitle: 'QAAutomation Test Results'
