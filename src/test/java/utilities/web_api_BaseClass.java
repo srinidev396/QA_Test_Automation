@@ -58,7 +58,7 @@ public class web_api_BaseClass {
     {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
         Date date = new Date();
-        htmlReporter = new ExtentSparkReporter("./Test_Report/Tab_FusionRMS_Report_"+formatter.format(date)+".html")
+        htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"\\Test_Report\\Tab_FusionRMS_Report_"+formatter.format(date)+".html")
                 .viewConfigurer()
                 .viewOrder()
                 .as(new ViewName[] { ViewName.DASHBOARD, ViewName.TEST, ViewName.CATEGORY, ViewName.AUTHOR,
