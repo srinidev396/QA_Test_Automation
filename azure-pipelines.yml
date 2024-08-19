@@ -7,8 +7,8 @@ pool:
 parameters:
   - name: groups
     displayName: 'Select groups'
-    type: string
-    default: 'Smoke'
+    type: object
+    default: []
     values:
       - Smoke
       - Sanity
