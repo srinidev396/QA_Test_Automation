@@ -4,6 +4,34 @@ trigger:
 pool:
   name: Default
 
+parameters:
+  - name: groups
+    displayName: 'Select groups'
+    type: string
+    default: 'Smoke'
+    values:
+      - Smoke
+      - Sanity
+      - Regression
+  - name: prod
+    displayName: 'Select prod'
+    type: string
+    default: 'api'
+    values:
+      - api
+      - web
+  - name: env
+    displayName: 'Select env'
+    type: string
+    default: 'devopsqa'
+    values:
+      - test
+      - UAT
+      - Prod
+      - devopsqa
+      - devopsuat
+      - devopsprod   
+
 steps:
 # - task: UsePythonVersion@0
 #   inputs:
