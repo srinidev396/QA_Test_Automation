@@ -8,7 +8,7 @@ parameters:
   - name: groups
     displayName: 'Select groups'
     type: object
-    default: []
+    default: Smoke
     values:
       - Smoke
       - Sanity
