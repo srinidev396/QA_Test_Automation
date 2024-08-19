@@ -31,7 +31,13 @@ parameters:
       - devopsqa
       - devopsuat
       - devopsprod   
-
+  - name: prod1
+    displayName: 'Select env'
+    type: string
+    default: 'api'
+    values:
+      - api
+      - web
 steps:
 # - task: UsePythonVersion@0
 #   inputs:
