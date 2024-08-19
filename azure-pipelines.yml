@@ -6,7 +6,7 @@ pool:
 
 parameters:
   - name: groups
-    displayName: 'Select groups'
+    displayName: 'Please enter the groups'
     type: object
     default: Smoke
     values:
@@ -14,14 +14,14 @@ parameters:
       - Sanity
       - Regression
   - name: prod
-    displayName: 'Select prod'
+    displayName: 'Please select value for prod'
     type: string
     default: 'api'
     values:
       - api
       - web
   - name: env
-    displayName: 'Select env'
+    displayName: 'Please select value for env'
     type: string
     default: 'devopsqa'
     values:
